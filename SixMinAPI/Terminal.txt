@@ -1,0 +1,12 @@
+
+- Iniciar compose contenedor
+ocker-compose up -d
+
+- Si falla iniciar migraciones
+dotnet tool install --global dotnet-ef  
+
+- Iniciar migraciones
+dotnet ef migrations add initialmigration
+
+- Crear la base de datos
+dotnet ef database update
